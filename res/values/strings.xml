@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">Conversor-mvc</string>
+    <string name="empty"></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_conversor">Conversor</string>
+    <string name="title_activity_conversor_mvc">s</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_buscador_celulares">Buscador de Celulares</string>
+    <string name="title_activity_editar_celular">nada</string>
+    <string name="editar_celular_title">Editar Celular</string>
+    <string name="editar_celular_nombre">Nombre</string>
+    <string name="editar_celular_numero">Número</string>
+    <string name="editar_celular_modelo">Modelo</string>
+    <string name="editar_celular_resumen_de_cuenta">Recibe resumen de cuenta</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="buscador_title">Buscador de celulares</string>
+    <string name="buscador_nombre">Nombre</string>
+    <string name="buscador_buscar">Buscar</string>
+    <string name="modelo">Modelo</string>
+    <string name="menu_conversormvc">ConversorMVC</string>
+    <string name="menu_conversor">Conversor</string>
+    <string name="menu_main">Main</string>
+
+</resources>

@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/editar_celular_navigation_container"
+        style="@style/navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#292929" >
+
+        <TextView
+            android:id="@+id/navigation_title"
+            style="@style/navigation_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/editar_celular_title"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/editar_celular_navigation_container_border"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/editar_celular_navigation_container"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editar_celular_navigation_container_border"
+        android:background="#1e1e1e"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/editar_celular_field_nombre"
+            style="@style/RowContainerEditable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editar_celular_navigation_container"
+            android:background="#404040" >
+
+            <TextView
+                android:id="@+id/editar_celular_field_nombre_label"
+                style="@style/EditableLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/editar_celular_nombre"
+                android:textColor="#ededed"
+                android:textStyle="normal"
+                android:width="98dp" />
+
+            <EditText
+                android:id="@+id/editar_celular_field_nombre_text"
+                style="@style/EditableText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/editar_celular_field_nombre_label"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#c6c6c6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editar_celular_field_numero"
+            style="@style/RowContainerEditable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editar_celular_field_nombre"
+            android:background="#404040" >
+
+            <TextView
+                android:id="@+id/editar_celular_field_numero_label"
+                style="@style/EditableLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/editar_celular_numero"
+                android:textColor="#ededed"
+                android:textStyle="normal"
+                android:width="98dp" />
+
+            <EditText
+                android:id="@+id/editar_celular_field_numero_text"
+                style="@style/EditableText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/editar_celular_field_numero_label"
+                android:hint="Teléfono"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="#c6c6c6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editar_celular_field_modelo"
+            style="@style/RowContainerEditable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editar_celular_field_numero"
+            android:background="#404040" >
+
+            <TextView
+                android:id="@+id/editar_celular_field_modelo_label"
+                style="@style/EditableLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/editar_celular_modelo"
+                android:textColor="#ededed"
+                android:textStyle="normal"
+                android:width="98dp" />
+
+            <Spinner
+                android:id="@+id/editar_celular_field_modelo_spinner"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/editar_celular_field_modelo_label"
+                android:divider="@drawable/list_divider"
+                android:dropDownHorizontalOffset="0dp"
+                android:dropDownVerticalOffset="0dp"
+                android:footerDividersEnabled="false"
+                android:gravity="center_vertical|top"
+                android:headerDividersEnabled="false"
+                android:hint="Nokia"
+                android:popupBackground="#404040"
+                android:prompt="@string/empty"
+                android:spinnerMode="dialog"
+                tools:listitem="@android:layout/simple_spinner_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editar_celular_field_resumen"
+            style="@style/RowContainerEditable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editar_celular_field_modelo"
+            android:background="#404040" >
+
+            <TextView
+                android:id="@+id/editar_celular_field_resumen_label"
+                style="@style/EditableLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editar_celular_resumen_de_cuenta"
+                android:textColor="#ededed"
+                android:textStyle="normal"
+                android:width="220dp" />
+
+            <CheckBox
+                android:id="@+id/editar_celular_field_resumen_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:button="@drawable/check_button" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/editar_celular_aceptar"
+                style="@style/FormButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/editar_celular_cancelar"
+                android:text="@string/aceptar" />
+
+            <Button
+                android:id="@+id/editar_celular_cancelar"
+                android:layout_width="75dp"
+                android:layout_height="52dp"
+                android:layout_alignBottom="@id/editar_celular_aceptar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@id/editar_celular_aceptar"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/cancel_button_background_style"
+                android:contentDescription="@string/empty" >
+                <requestFocus />
+            </Button>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
