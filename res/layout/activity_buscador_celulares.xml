@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_buscador"
+        android:contentDescription="@string/empty" />
+
+    <LinearLayout
+        android:id="@+id/opacityFilter"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#AA000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/buscador_header"
+        style="@style/navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#292929"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/buscador_navigation_title"
+            style="@style/navigation_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/buscador_title"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buscador_formulario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/buscador_header"
+        android:background="#1e1e1e"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" >
+
+        <RelativeLayout
+            android:id="@+id/buscador_formulario_nombre"
+            style="@style/RowContainerEditable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/buscador_formulario_nombre_label"
+                style="@style/EditableLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/buscador_nombre"
+                android:textColor="#ededed"
+                android:textStyle="normal"
+                android:width="98dp" />
+
+            <EditText
+                android:id="@+id/buscador_formulario_nombre_text"
+                style="@style/EditableText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/buscador_formulario_nombre_label"
+                android:hint="@string/buscador_nombre"
+                android:singleLine="true"
+                android:textColor="#c6c6c6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buscador_formulario_modelo"
+            style="@style/RowContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/buscador_formulario_nombre"
+            android:background="#404040" >
+
+            <TextView
+                android:id="@+id/buscador_formulario_modelo_label"
+                style="@style/Label"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/modelo"
+                android:textColor="#ededed"
+                android:textStyle="normal"
+                android:width="98dp" />
+
+            <Spinner
+                android:id="@+id/buscador_formulario_modelo_selector"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/buscador_formulario_modelo_label"
+                android:divider="@drawable/list_divider"
+                android:dropDownHorizontalOffset="0dp"
+                android:dropDownVerticalOffset="0dp"
+                android:footerDividersEnabled="false"
+                android:gravity="center_vertical|top"
+                android:headerDividersEnabled="false"
+                android:hint="Nokia"
+                android:popupBackground="#404040"
+                android:prompt="@string/empty"
+                android:spinnerMode="dialog"
+                tools:listitem="@android:layout/simple_spinner_item" />
+
+            <Button
+                android:id="@+id/buscador_formulario_modelo_selector_button"
+                style="@style/select_down_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buscador_buscar"
+        style="@style/FormButton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/buscador_formulario"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="3dp"
+        android:text="@string/buscador_buscar" >
+
+        <requestFocus />
+    </Button>
+
+    <ListView
+        android:id="@+id/buscador_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buscador_formulario"
+        android:layout_alignRight="@+id/buscador_formulario"
+        android:layout_below="@+id/buscador_buscar"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="singleChoice"
+        android:divider="#000000"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/buscador_header"
+        android:background="#000000"
+        android:padding="10dp" >
+    </RelativeLayout>
+
+</RelativeLayout>

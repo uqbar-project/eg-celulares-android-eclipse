@@ -1,0 +1,97 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="navigation_container">
+        <item name="android:padding">7dp</item>
+        <item name="android:background">#292929</item>
+    </style>
+
+    <style name="navigation_back">
+        <item name="android:background">@drawable/navigation_back</item>
+        <item name="android:width">55dp</item>
+        <item name="android:height">55dp</item>
+        <item name="android:contentDescription">@string/empty</item>
+    </style>
+
+    <style name="navigation_title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#F2F2F2</item>
+    </style>
+
+    <style name="RowContainerEditable">
+        <item name="android:textColor">#b3b3b3</item>
+        <item name="android:background">#404040</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+    <style name="EditableText">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#b3b3b3</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:background">#2d2d2d</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">2dp</item>
+    </style>
+
+    <style name="EditableLabel" parent="@style/Label">
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:width">90dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#e8e8e8</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="android:style/Widget.ListView.DropDown">
+        <item name="android:divider">#b3b3b3</item>
+        <item name="android:dividerHeight">5dp</item>
+        <item name="android:background">#404040</item>
+    </style>
+
+    <style name="select_down_button">
+        <item name="android:background">@drawable/arrow_down</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:height">10dp</item>
+    </style>
+
+    <style name="RowContainer">
+        <item name="android:textColor">#b3b3b3</item>
+        <item name="android:background">#404040</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+    <style name="Shadows">
+        <item name="android:shadowColor">#333333</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+
+    <style name="DefaultButton" parent="@style/Shadows">
+        <item name="android:textColor">#eeeeee</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:height">55dp</item>
+    </style>
+
+    <style name="FormButton" parent="@style/DefaultButton">
+        <item name="android:background">@drawable/form_button</item>
+    </style>
+
+</resources>
